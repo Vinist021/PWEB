@@ -1,228 +1,264 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <!-- navegador usará a largura total dispositivo e
+      página será exibida sem zoom,
+      no seu tamanho real -->
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portifólio de Desenvolvedor Web">
-    <meta name="keywords" content="Desenvolvedor, Web, HTML, CSS, JavaScript">
-    <meta name="author" content="Vinicius Teixeira">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="author" content="Sherlock Holmes Silva">
+    <meta name="description" content="Portfólio de 
+    Sherlock Holmes Silva, desenvolvedor web.">
+    <meta name="keywords" content="Desenvolvedor, Web, HTML,
+      CSS, JavaScript,
+     Portfólio, Sherlock Holmes Silva">
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Vinicius Teixeira Desenvolvedor Web</title>
 </head>
 
 <body>
+
+
     <header class="header-1">
         <nav class="nav bd-grid">
             <div>
-                <a href="#home" class="nav-logo"> Vinicius Teixeira</a>
+                <a href="#home" class="nav-logo">Vinicius Teixeira</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">
+                            Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">
+                            Sobre</a></li>
+                    <li class="nav-item"><a href="#formation" class="nav-link">
+                            Formação</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">
+                            Habilidades</a>
+                    <li class="nav-item"><a href="#projects" class="nav-link">
+                            Projetos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">
+                            Contato</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
+    <main>
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">Olá, <br>Eu sou o
+                    <span class="home-title-color">Vinicius Teixeira
+                        Silva</span><br>Desenvolvedor Web
+                </h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
 
-            <li class="nav-item">
-                <a href="#home" class="nav-link active">
-                    Início
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">
-                    Sobre
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#formation" class="nav-link">
-                    Formação
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills" class="nav-link">
-                    Habilidades
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects" class="nav-link">
-                    Projetos
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="Contato">
-                    Contato
-                </a>
-            </li>
+            <div class="home-img">
+                <br>
+                <br>
+                <img src="./images/profile.png" alt="foto do Sherlock" title="Sherlock" />
+            </div>
+        </section>
 
-        </ul>
 
-        <main>
-            <section class="home bd-grid" id="home">
-                <div class="home-data">
-                    <h1 class="home-title">
-                        Olá, <br>Eu sou o
-                        <span class="home-title-color">Vinicius Teixeira</span>
-                        <br>Desenvolvedor Web
-                    </h1>
-                    <a href="#contact" class="button">Contato</a>
-                </div>
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
 
-                <div class="home-img">
-                    <br>
-                    <br>
-                    <img src="./images/profile.png" alt="Vinicius Teixeira" title="Vinicius">
-                </div>
-            </section>
-
-            <section class="about section" id="about">
-                <h2 class="section-title">Sobre</h2>
-
-                <div class="about-container bd-grid"></div>
+            <div class="about-container bd-grid">
 
                 <div>
-                    <h2 class="about-subtitle">Olá, eu sou o Vinicius</h2>
+                    <h2 class="about-subtitle">Olá, Eu sou o Vinicius 👋</h2>
                     <p class="about-text">
                         Sou recém-formado em Análise de Desenvolvimento
                         de Sistemas na Fatec Sorocaba-SP.
-
                         <br>
-                        Sou apaixonado por criar aplicativos web limpos, eficientes e fáceis
+                        Sou apaixonado por criar aplicativos web limpos, eficientes e
+                        fáceis de usar. Aprendo rápido e
                         gosto de colaborar com outras pessoas para resolver problemas.
                     </p>
+
+                    <pre>Estou à disposição para novas oportunidades profissionais!</pre>
+
+                    <br>
+                    <br>
+                    <h3>Minha Filosofia</h3>
+                    <q>O melhor código é aquele que resolve o
+                        problema do usuário com elegância e eficiência.</q>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section-title" id="formation">
-                <h2 class="section-title">Formação</h2>
 
-                <div class="formation-container bd-grid">
-                    <h3><u>Graduação</u></h3>
-                    Tecnologia em Análise e Desenvolvimento de Sistemas
+        <section class="formation section" id="formation">
+            <h2 class="section-title">Formação</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Graduação</u></h3>
+                <p> Tecnologia em Análise e Desenvolvimento de Sistemas
                     Fatec Sorocaba - SP
-                    Período : 2022 a 2023.
-                    <br>
-                    <br>
-                    <h3><u>Complementar</u></h3>
-                    <ol>
-                        <li>Formação Python - Alura (52 horas)</li>
-                        <li>Spring Boot Framework - Alunra(30 horas)</li>
-                        <li>Git - Alura (16 horas)</li>
-                        <li>MySQL - Alura (8 horas)</li>
-                    </ol>
-                </div>
-            </section>
+                    Período : 2022 a 2024. </p>
+                <br>
+                <br>
+                <h3><u>Complementar</u></h3>
+                <ol>
+                    <li>Formação Python - Huawei (90 horas)</li>
+                    <li>Java/Spring Boot - DIO (100 horas)</li>
+                    <li>Formação Fullstack - Abútua (240 horas)</li>
+                </ol>
+            </div>
+        </section>
 
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Habilidades</h2>
-
-                <div class="skills-container bd-grid">
-                    <div>
-                        <h2 class="skills-container bd-grid">
-                            <div>
-                                <h2 class="skills-subtitle">Habilidades Profissionais</h2>
-                                <p class="skills-text"></p>
-                            </div>
-                        </h2>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills section" id="skills">
-                <h2 class="skills-container bd-grid"></h2>
-
-                <div class="skills-container bd-grid">
-                    <div>
-                        <h2 class="skills-subtitle">Habilidades Profissionais</h2>
-                        <p class="skills-text">
-                            Minhas habilidades são focadas em <strong>desenvolvimento</strong> <b>Web</b>,
-                            incluindo <abbr title="HyperText Markup Language">HTML</abbr>, CSS,
-                            JavaScript e vários
-                            <i>frameworks</i>.
-                        </p>
-
-                        <div class="skills-data">
-                            <div class="skills-names">
-                                <p>HTML5</p>
-                            </div>
-
-                            <div class="skills-bar skills-html"></div>
-
-                            <div>
-                                <span class="skills-percentage">80%</span>
-                            </div>
-
-                            <div class="skills-data">
-                                <div class="skills-name">
-                                    <p>CSS3</p>
-                                </div>
-                            </div>
-
-                            <div class="skills-bar skills-css"></div>
-
-                            <div>
-                                <span class="skills-percentage">75%</span>
-                            </div>
-
-                            <div class="skills-data">
-                                <div class="skills-name">
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-
-                            <div class="skills-bar skills-js"></div>
-
-                            <div>
-                                <span class="skills-percentage">70%</span>
-                            </div>
-
-                            <h3>Soft Skills</h3>
-
-                            <dl>
-                                <dt><em>Comunicação</em></dt>
-                                <dd> Tenho experiência em apresentar projeos para a liderança e clientes.</dd>
-                                <dt><em>Trabalho em equipe</em></dt>
-                                <dd>Em meu úlrimo projeto, trabalhei em conkunto com as equipes de marketing e vendas
-                                    para lançar um produto</dd>
-                            </dl>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Habilidades Profissionais</h2>
+                    <p class="skills-text">
+                        Minhas habilidades são focadas em <strong>desenvolvimento</strong> <b>web</b>,
+                        incluindo <abbr title="HyperText Markup Language">HTML</abbr>,
+                        CSS,
+                        JavaScript e vários
+                        <i>frameworks</i>.
+                    </p>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>HTML5</p>
                         </div>
-
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percentage">80%</span>
+                        </div>
                     </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skills-bar skills-css"></div>
+                        <div>
+                            <span class="skills-percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+                        <div>
+                            <span class="skills-percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <h3>Soft Skills</h3>
+                    <dl>
+                        <dt><em>Comunicação</em></dt>
+                        <dd> Tenho experiência em apresentar projetos para a liderança
+                            e clientes.</dd>
+                        <dt><em>Trabalho em equipe</em></dt>
+                        <dd>Em meu último projeto, trabalhei em conjunto com as
+                            equipes de
+                            marketing e vendas para
+                            lançar um <mark>novo produto</mark></dd>
+                    </dl>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="projects section" id="projects">
-                <h2 class="section-title">projetos</h2>
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projetos</h2>
 
-                <div class="projects-text">
-                    <h3>Tabela de Projetos</h3>
-                    <br>
-                    <table class="projects-table">
-                        <thead>
-                            <tr>
-                                <th>Projeto</th>
-                                <th>Tecnologias</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Site Pessoal</td>
-                                <td>HTML, CSS, JS</td>
-                                <td>Concluído</td>
-                            </tr>
-                            <tr>
-                                <td>E-commerce</td>
-                                <td>React, Node.js</td>
-                                <td><del>Em progresso</del> Concluído</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="projects-text">
+                <h3>Tabela de Projetos</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Projeto</th>
+                            <th>Tecnologias</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site Pessoal</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>E-commerce</td>
+                            <td>React, Node.js</td>
+                            <td><del>Em progresso</del>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>Site Institucional da empresa Alpha</td>
+                            <td>React, Node.js</td>
+                            <td>Em progresso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- pweb noite 20/08 -->
+            <div class="projects-container bd-grid">
+                <div class="projects-img">
+                    <figure>
+                        <a href="#" target="_blank">
+                            <img src="#" alt="" width="300" height="300">
+                        </a>
+                        <figcaption>Projeto Site Pessoal </figcaption>
+                    </figure>
                 </div>
-            </section>
+                <div class="projects-img">
+                    <figure>
+                        <a href="#" target="_blank">
+                            <img src="#" alt="" width="300" height="300">
+                        </a>
+                        <figcaption>Projeto E-commerce </figcaption>
+                    </figure>
+                </div>
+                <div class="projects-img">
+                    <figure>
+                        <a href="#" target="_blank">
+                            <img src="#" alt="" width="300" height="300">
+                        </a>
+                        <figcaption>Site Institucional da empresa Alpha </figcaption>
+                    </figure>
 
-        </main>
+                </div>
 
-    </div>
+            </div>
+        </section>
+        <!-- pweb manha 26/08 -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container bd-grid">
+
+                <a href="#">
+                    <img src="#" width="100" height="100" alt="logo do instagram"></a>
+
+                <a href="#"><img src="#" width="100" height="100"></a>
+
+                <a href="#">
+                    <img src="#" width="100" height="100"></a>
+
+                <a href="#">
+                    <img src="#" width="100" height="100"></a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p id="footer-title"> &nbsp; Criado na aula </p>
+        <p> &ensp; Programação Web</p>
+        <p> &emsp; 08/2025 </p>
+        <p><small>&copy; <sup>2025</sup> <sub>Vinicius Teixeira</sub>
+                Todos os direitos reservados. </small></p>
+    </footer>
+
 </body>
 
 </html>
