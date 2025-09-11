@@ -1,0 +1,70 @@
+body {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.reportTitle {
+    text-align: center;
+}
+
+.header {
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.container-box {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100px 150px;
+
+    grid-template-areas: 
+    'a b c c'
+    'a b c c'
+    'a b c c'
+    'e e f f';
+}
+
+.box {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.a {
+    grid-area: a;
+    text-align: center;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+img {
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
