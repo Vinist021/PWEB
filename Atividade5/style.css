@@ -1,0 +1,84 @@
+.txtResponsivo {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    .txtResponsivo {
+        color: white;
+        background-color: grey;
+    }
+
+    .txtResponsivo::after {
+        content: "420px";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .txtResponsivo {
+        color: white;
+        background-color: orange;
+    }
+
+    .txtResponsivo::after {
+        content: "768px";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .txtResponsivo {
+        color: white;
+        background-color: pink;
+    }
+
+    .txtResponsivo::after {
+        content: "1024px";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .txtResponsivo {
+        color: white;
+        background-color: red;
+   }
+
+    .txtResponsivo::after {
+        content: "1080px";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .txtResponsivo {
+        color: white;
+        background-color: blue;
+       }
+
+    .txtResponsivo::after {
+        content: "1366px";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .txtResponsivo {
+        color: white;
+        background-color: yellow;
+    }
+    
+    .txtResponsivo::after {
+        content: "1920px";
+    }
+}
+
+@media (min-width: 1921px) {
+    .txtResponsivo {
+        color: white;
+        background-color: green;
+    }
+
+    .txtResponsivo::after {
+        content: "Maior que 1920px";
+    }
+}
