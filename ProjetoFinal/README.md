@@ -1,16 +1,72 @@
-# React + Vite
+# Kanban (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Visão Geral**
+- **Descrição:** Projeto de um quadro Kanban construído com `React` e `Vite`, contendo colunas, cartões de tarefa e modais para criação/edição/visualização de tarefas.
 
-Currently, two official plugins are available:
+**Visualização do projeto**
+<img width="1905" height="945" alt="image" src="https://github.com/user-attachments/assets/7f9c1871-35d3-460e-a5ae-ca94a30f48dc" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+**Funcionalidades Principais**
+- **Quadro por colunas:** Cada coluna representa um estado/tipo de lista e organiza os cartões de tarefa.
+- **Cartões de tarefa:** Componentes que exibem informações básicas da tarefa (título, data, etiquetas).
+- **Modais para tarefa:** `TaskModal` para criar/editar tarefas e `TaskViewModal` para visualizar detalhes.
+- **Pesquisa:** Input de busca (`SearchInput`) para filtrar tarefas por texto.
+- **Formulários reutilizáveis:** Inputs e selects dentro de `src/components/shared/modal` para consistência nos modais.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Estrutura do Projeto (resumo)**
+- **Arquivos principais:**
+  - `main.jsx`: Ponto de entrada da aplicação.
+  - `App.jsx`: Componente raiz que monta o layout geral.
+  - `index.css`: Estilos globais.
+- **Componentes:**
+  - `Page.jsx`: Layout/contêiner da página principal.
+  - `BoardColumn.jsx`: Lógica e renderização das colunas do quadro.
+  - `TaskCard.jsx`: Apresenta cada tarefa no quadro.
+  - `TaskModal.jsx`: Formulário para criar/editar tarefas.
+  - `TaskViewModal.jsx`: Exibe detalhes completos da tarefa.
+  - `SearchInput.jsx`: Componente de pesquisa.
+- **Shared / UI:**
+  - `Modal.jsx`: Componente base de modal.
+  - `Input.jsx`, `DateInput.jsx`, `SelectBox.jsx`: Controles de formulário reutilizáveis.
 
-## Expanding the ESLint configuration
+**Pré-requisitos**
+- **Node.js:** Recomendado Node 16+.
+- **npm** (ou `yarn`/`pnpm`) para instalar dependências.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Instalação e Execução**
+- **Instalar dependências:**
+
+  ```bash
+  npm install
+  ```
+
+- **Executar em modo de desenvolvimento:**
+
+  ```bash
+  npm run dev
+  ```
+
+- **Build para produção:**
+
+  ```bash
+  npm run build
+  npm run preview
+  ```
+
+**Como usar a aplicação (fluxo básico)**
+- **Visualizar o quadro:** Abra `http://localhost:5173` (porta padrão do Vite) após rodar `npm run dev`.
+- **Criar tarefa:** Abra o modal de criação (botão/ação no UI) — preencha título, descrição, data e selecione coluna/etiquetas.
+- **Editar tarefa:** Clique no cartão de tarefa para abrir o `TaskModal` em modo edição.
+- **Visualizar detalhes:** Use o `TaskViewModal` para ver informações completas da tarefa.
+- **Pesquisar tarefas:** Use o `SearchInput` para filtrar tarefas por texto no título/descrição.
+
+**Componentes Importantes (detalhes)**
+- **`BoardColumn`:** Renderiza uma coluna com um cabeçalho e uma lista de `TaskCard`. Deve receber props como `title`, `tasks` e callbacks para ações (adicionar, mover, editar).
+- **`TaskCard`:** Mostra resumo da tarefa; dispara abertura do modal de visualização/edição ao clicar.
+- **`TaskModal` / `TaskViewModal`:** Gerenciam estado local do formulário e disparam callbacks para salvar/atualizar/excluir tarefas.
+- **`SearchInput`:** Emite eventos de busca (por exemplo via `onChange` ou `onSubmit`) para filtrar a lista de tarefas.
+
+**Link para acessar o projeto**
+
+🚀 Acesse o projeto: [Projeto_Quadro_Kanban](https://kanbanpweb.vercel.app/)
